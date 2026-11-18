@@ -24,7 +24,7 @@
       AFRAME.registerComponent('model-controls', {
         schema: { distance: { default: 14 }, min: { default: 5 }, max: { default: 30 } },
         init: function () {
-          this.spin = true;
+          this.spin = false;  // автовращение выключено, включается кнопкой
           this.pinch = 0;
           const scene = this.el.sceneEl;
           scene.addEventListener('touchmove', (e) => {
